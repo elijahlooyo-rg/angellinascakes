@@ -17,19 +17,20 @@
         <img src="images/logo.jpeg" class="logo" width="70px" height="70px">
         <ul id="nav-list">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
         </ul>
         <div class="humbger" id="humbger">
             <div class="humbger-line"></div>
             <div class="humbger-line"></div>
             <div class="humbger-line"></div>
         </div>
-        <div class="cart">
+        <a class="cart" href="cart.html">
             <i class="bi bi-cart"></i>
             <span class="cart-count">0</span>
-        </div>
+        </a>
     </nav>
     <main>
         <section class="hero">
@@ -42,61 +43,61 @@
                 <img src="images/cake-1.jpg" alt="Cake 1">
                 <h3>Chocolate Delight</h3>
                 <p>A rich and moist chocolate cake layered with creamy chocolate frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-2.jpg" alt="Cake 2">
                 <h3>Vanilla Dream</h3>
                 <p>A light and fluffy vanilla cake topped with smooth vanilla buttercream.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-3.jpg" alt="Cake 3">
                 <h3>Strawberry Bliss</h3>
                 <p>A delightful strawberry cake filled with fresh strawberries and whipped cream.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-4.jpeg" alt="Cake 4">
                 <h3 style="padding: 0; margin: 10px 0 5px 0; font-size: 1.5rem;">Red Velvet Romance</h3>
                 <p>A velvety red cake with a hint of cocoa, topped with cream cheese frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-5.jpeg" alt="Cake 5">
                 <h3>Lemon Zest</h3>
                 <p>A zesty lemon cake with a tangy lemon glaze and fresh lemon slices.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-6.jpeg" alt="Cake 6">
                 <h3>Carrot Cake</h3>
                 <p>A moist carrot cake with a blend of spices, topped with cream cheese frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-7.jpeg" alt="Cake 7">
                 <h3>Coffee Infusion</h3>
                 <p>A rich coffee-flavored cake with a smooth coffee buttercream frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-8.jpeg" alt="Cake 8">
                 <h3>Cookies and Cream</h3>
                 <p>A delicious cookies and cream cake layered with crushed cookies and creamy frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-9.jpeg" alt="Cake 9">
                 <h3>Tropical Paradise</h3>
                 <p>A refreshing tropical cake with layers of pineapple, coconut, and mango, topped with a light coconut frosting.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
             <div class="card">
                 <img src="images/cake-10.jpeg" alt="Cake 10">
                 <h3>Black Forest Fantasy</h3>
                 <p>A decadent black forest cake with layers of chocolate, cherries, and whipped cream.</p>
-                <button>Order Now</button>
+                <button class="order" onclick="addToCart()">Order Now</button>
             </div>
 
         </section>
@@ -108,6 +109,8 @@
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                <label for="whatsapp">Whatsapp</label>
+                <input type="text" name="tel" id="whatsapp-contact" maxlength="13" placeholder="+256.....">
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send Message</button>
@@ -118,7 +121,7 @@
             <p>Find us at:</p>
             <address>
                 123 Bakery Street<br>
-                Sweet City, SC 12345
+                Ndeeba, Kampala
             </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63836.17049976654!2d32.59382734236432!3d0.3080451542137086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sndeeba%20church!5e0!3m2!1sen!2sug!4v1773415809172!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
@@ -126,6 +129,9 @@
     <footer>
         <p>&copy; 2026 Angelicas Cakes. All rights reserved.</p>
     </footer>
+    <a href="https://wa.me/256757511917?text=Hello%20from%20Angellina%20Cakes" target="_blank" class="whatsapp-btn">
+        <i class="bi bi-whatsapp"></i>
+    </a>
     <script src="script.js"></script>
 </body>
 </html>
